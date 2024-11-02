@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lux Radio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Sigmar+One&display=swap" rel="stylesheet">
+    <style>
+body{
+    background:linear-gradient(#ff0000,#ed7423,#ed7423,#ed7423);
+    min-height:100vh;
+    overflow:hidden;
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --font-1: 'Cookie', cursive;
+    --font-2: 'Oswald', sans-serif;
+    --font-3: 'Ranchers', cursive;
+    --font-4: 'Rowdies', cursive;
+}
+:before, 
+:after{
+    content:'';
+    position:absolute;
+}
+canvas{
+    position:absolute;
+    top:25%;
+    left:0;
+}
+.jd__cloud1{
+    width:300px;
+    top:300px;
+    left:10%;
+    transform:translateX(-300%);
+    animation:move 40s linear infinite;
+}
+.jd__cloud2{
+    width:350px;
+    top:300px;
+    left:0;
+    transform:translateX(-400%);
+    animation:move 30s linear infinite;
+}
+.jd__cloud3{
+    width:300px;
+    top:300px;
+    left:10%;
+    transform:translateX(-400%);
+    animation:move 25s linear infinite;
+}
+.jd__cloud4{
+    width:350px;
+    top:300px;
+    left:0;
+    transform:translateX(-400%);
+    animation:move 50s linear infinite;
+}
+.jd__cloud5{
+    width:350px;
+    top:300px;
+    left:0;
+    transform:translateX(-400%);
+    animation:move 25s linear infinite;
+}
+.jd__cloud6{
+    width:350px;
+    top:300px;
+    left:0;
+    transform:translateX(-400%);
+    animation:move 35s linear infinite;
+}
+@keyframes move{
+    0%{
+        transform:translateX(-100%) scale(1);
+    }
+    0%{
+        transform:translateX(calc(100vw + 100%)) scale(1.2);
+    }
+}
+:before,
+:after{
+    content:'';
+    position: relative;
+}
+.jd__moon{
+    width:384px;
+    height:384px;
+    position: absolute;
+    border-radius:50%;
+    background:#D9E2E5;
+    left:200px;
+    top:200px;
+    box-shadow:0 0 80px 20px #D9E2E5;
+    animation:moon_pulse 2s ease-in-out infinite;
+}
+@keyframes moon_pulse{
+    0%{
+        box-shadow:0 0 80px 50px #D9E2E5;
+    }
+    50%{
+        box-shadow:0 0 80px 20px #d9e2e5;
+    }
+    100%{
+        box-shadow:0 0 80px 50px #D9E2E5;
+    }
+}
+.jd__moon:before,
+.jd__moon:after{
+    background:rgba(0,0,0,.2);
+    border-radius:50%;
+}
+.jd__moon:before{
+    width:57px;
+    height:61px;
+    top:40px;
+    right:70px;
+}
+.jd__moon:after{
+    width:16px;
+    height:20px;
+    top:100px;
+    right:65px;
+    box-shadow:-80px 20px rgba(0,0,0,.2);
+}
+/* CODIGO DA CENA FIXO */
+:before, 
+:after{
+    content:'';
+    position:absolute;
+}
+canvas{
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+.jd__scene,
+.jd__wave{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    left:100px;
+    bottom: -10%;
+}
+.ma__abo{
+    background:url()center bottom no-repeat fixed;
+    z-index:-1;
+}
+.ma__abo img{
+    max-width:100% !important;
+    position:absolute;
+    width: 250px;
+    height: 221px;
+    object-fit: contain;
+    left: 24%;
+    bottom: 2%;
+    position: absolute;
+    margin: 0 auto;
+}
+.abo_cloud1{
+
+    transform:translateX(-100%);
+	}
+
+.jd__moon1{
+    width:3px;
+    height:3px;
+    border-radius:50%;
+    background:#fff702ea;
+    bottom: 15%;
+    left: 15%;
+    position:fixed;
+    box-shadow:0 0 80px 2px #ffff00;
+    animation:moon 1s ease-in-out infinite;
+}
+@keyframes moon{
+
+    0%{
+        box-shadow:0 0 80px 20px #ffcc00be;
+    }
+    100%{
+        box-shadow:0 0 80px 50px #fff700;
+    }
+}
+body
+{
+    margin: 0;
+    padding: 0;
+
+}
+.db2
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.ghost1
+{
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    animation: move-ghost1 20s linear infinite;
+}
+@keyframes move-ghost1 
+{ 
+    0%
+    {
+        transform: translate(0,0);
+    }
+    30%
+    {
+        transform: translate(2100px, -1000px);
+    }
+    60%
+    {
+        transform: translate(2100px, -1000px);
+    }
+    100%
+    {
+        transform: translate(2100px, -1000px);
+    }
+}
+.ghost2
+{
+    position: absolute;
+    bottom: -100px;
+    right: -10px;
+    animation: move-ghost2 10s linear infinite;
+}
+@keyframes move-ghost2 
+{ 
+    2%
+    {
+        transform: translate(0,0);
+    }
+    100%
+    {
+        transform: translate(-2000px, -1000px);
+    }
+ }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Copre l'intera altezza della finestra */
+              background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;  
+  top: 0px;
+  left: 0px;
+  border-radius: 10px;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://u.cubeupload.com/extralux/nova6.png'); /* Sostituisci con il tuo link */
+            background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;  
+  top: 0px;
+  left: 0px;
+  border-radius: 10px;
+
+   }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2); /* Colore nero con una ridotta trasparenza */
+            z-index: 9; /* Assicura che l'overlay sia sopra l'immagine */
+        }
+        .center-image {
+            position: relative;
+            z-index: 3; /* Assicura che l'immagine sia sopra l'overlay */
+            max-width: 100%; /* Limita la larghezza massima dell'immagine */
+            max-height: 100%; /* Limita l'altezza massima dell'immagine */
+            transition: filter 0.5s ease; /* Aggiungi transizione per il filtro */
+            filter: brightness(0.2); /* Imposta l'immagine al buio inizialmente */
+        }
+        .container:hover .center-image {
+            animation: lamp-effect 1s forwards; /* Attiva l'animazione quando il mouse passa sopra */
+        }
+
+	</style>
+</head>
+<body>
+  <div class="jd__moon"></div>
+</body>
+
+<body>
+ <div class="nome">
+    <div class="jd__scene">
+        <img class="jd__cloud1" src="https://i.imgur.com/sJrWsXK.png">
+        <img class="jd__cloud2" src="https://i.imgur.com/Sd71kjb.png">
+        <img class="jd__cloud3" src="https://i.imgur.com/5BebkwF.png">
+        <img class="jd__cloud4" src="https://i.imgur.com/Sd71kjb.png">  
+        <img class="jd__cloud5" src="https://i.imgur.com/5BebkwF.png">
+        <img class="jd__cloud6" src="https://i.imgur.com/sJrWsXK.png">
+    </div>  
+</body>
+<body>
+    <div class="container">
+    <div class="background"></div>
+	 <div class="overlay"></div>
+  <section class="sec1">
+    <img src="" class="dg2">
+    <img src="https://i.imgur.com/jRjXUSt.png" class="ghost1">
+    <img src="https://i.imgur.com/h01n9J2.png" class="ghost2">
+  </section>
+</body>
+  <canvas></canvas>
+    <script>
+	var canvas = document.querySelector('canvas');
+var ctx = canvas.getContext('2d');
+var birds = [];
+var sprite = new Image();
+sprite.src = "https://i.imgur.com/iyVHl0J.png";
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight / 3;
+
+window.addEventListener('resize', function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight / 3;
+}, false);
+
+function Bird(img, px, py, dx){
+    this.ex = 0;
+    this.ey = 0;
+    this.width = 42;
+    this.height = 32;
+    this.px = px;
+    this.py = py;
+    this.dx = dx;
+    this.img = img;
+    this.count = 0;
+    
+    
+    this.draw = function(){
+        ctx.drawImage(this.img, this.ex, this.ey, this.width, this.height, this.px, this.py, this.width, this.height);
+    }
+    
+    this.update = function (){
+        this.count++;
+        if(this.count >= 66){
+            this.count = 0;
+        }
+        this.ex = Math.floor(this.count / 3) * this.width;
+        
+        if(this.px + this.width < 0){
+            this.px = innerWidth + this.width;
+        }
+        
+        this.px -= this.dx;
+        
+        this.draw();
+    }
+}
+
+function init(){
+    birds = [];
+    for(var i = 0; i < 10; i++){
+        var px = innerWidth - 40;
+        var py = Math.random() * innerHeight/4;
+        var dx = (Math.random()*2 + 1);
+        
+        birds.push(new Bird(sprite, px, py, dx));
+    }
+}
+
+function animate(){
+    requestAnimationFrame(animate);
+    
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    for(var i in birds){
+        var bird = birds[i];
+        bird.update();
+    }
+    
+}
+init();
+animate();
+	</script>
+</body>
+</html>
+   </script>
+  
+
+
+ <script>
+
+
+		var message="Isključeno kopiranje i desni klik by Lux!";
+
+		function clickIE4(){
+		if (event.button==2){
+		alert(message);
+		return false;
+		}
+		}
+
+		function clickNS4(e){
+		if (document.layers||document.getElementById&&!document.all){
+		if (e.which==2||e.which==3){
+		alert(message);
+		return false;
+		}
+		}
+		}
+
+		if (document.layers){
+		document.captureEvents(Event.MOUSEDOWN);
+		document.onmousedown=clickNS4;
+		}
+		else if (document.all&&!document.getElementById){
+		document.onmousedown=clickIE4;
+		}
+
+		document.oncontextmenu=new Function("alert(message);return false")
+</script>	
+
+
+
+
+
+<script>
+
+
+		function disableselect(e){
+		return false
+		}
+		function reEnable(){
+		return true
+		}
+		document.onselectstart=new Function ("return false")
+		if (window.sidebar){
+		document.onmousedown=disableselect
+		document.onclick=reEnable
+		}
+</script>  
+
+
+
+</body>
+</html>
